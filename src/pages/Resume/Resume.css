@@ -41,3 +41,60 @@
     font-size: small;
     margin-top: 6px;
 }
+
+/* services */
+.service {
+    height: 100%;
+    text-align: center;
+}
+
+.service .service__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+}
+
+.service .service__description {
+    color: #989898;
+    border-color: var(--component-color) !important;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.service__icon > .MuiSvgIcon-root {
+    font-size: 40px;
+    margin-left: 0;
+    font-weight: 300;
+    color: darkslategray;
+}
+
+
+/* skills */
+.skill {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08);
+    min-height: 186px;
+    height: 100%;
+}
+
+.skill .skill__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.skill .skill__description {
+display: flex;
+align-items: center;
+color: #989898;
+font-weight: 400;
+line-height: 18px;
+}
+
+.skill .skill__description .timeline__dot {
+border-color: var(--component-color);
+padding: 2px;
+margin-right: 5px;
+}
