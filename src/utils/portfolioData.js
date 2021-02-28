@@ -3,6 +3,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import { WebOutlined } from '@material-ui/icons';
+import LanguageIcon from '@material-ui/icons/Language';
 
 let data = {
     name: "Shubham Kedare",
@@ -118,7 +119,54 @@ let data = {
                 "SCRUM/Agile"
             ]
         }
-    ]
+    ],
+
+    projects: [
+        {
+            tag: 'React',
+            title: "React Project",
+            caption: "Short Description",
+            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
+            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
+            links: [
+                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
+                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
+            ],
+        },
+        {
+            tag: 'React',
+            title: "React Project 2",
+            caption: "Short Description",
+            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
+            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
+            links: [
+                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
+                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
+            ]
+        },
+        {
+            tag: 'Python',
+            title: "Python Project",
+            caption: "Short Description",
+            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
+            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
+            links: [
+                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
+                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
+            ]
+        },
+        {
+            tag: 'Java',
+            title: "Java Project",
+            caption: "Short Description",
+            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
+            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
+            links: [
+                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
+                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
+            ],
+        },
+    ],
 
 
 };
