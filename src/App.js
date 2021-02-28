@@ -22,18 +22,19 @@ function App() {
 
             <Router>
               <Header />
-              <Switch>
-                <Route path="/portfolio">
-                  <Portfolio />
-                </Route>
-                
-                <Route path="/">
-                  <Resume />
-                </Route>
-              </Switch>
+              <div className="main__content container__shadow">
+                <Switch>
+                  <Route path="/portfolio">
+                    <Portfolio />
+                  </Route>
+                  
+                  <Route path="/">
+                    <Resume />
+                  </Route>
+                </Switch>
+              </div>
             </Router>
 
-            <CustomTimeline />
             <Footer />
           </Grid>
 
