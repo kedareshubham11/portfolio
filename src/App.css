@@ -4,9 +4,24 @@
 :root {
   --component-color: #ffc500;
 }
+
 /* margins and padding */
 .top__60 {
   margin-top: 60px !important;
+}
+
+.mt__30 {
+  margin-top: 30px !important;
+}
+.mb__30 {
+  margin-bottom: 30px !important;
+}
+.p_30 {
+  padding: 30px !important;
+}
+
+.pb__45{
+  padding-bottom: 45px !important;
 }
 
 @media (max-width: 991px) {
@@ -32,4 +47,10 @@
   margin-bottom: 30px;
   padding: 30px;
 
+}
+
+.section__title {
+  position:relative;
+  display: inline-block;
+  padding: 0 3px;
 }

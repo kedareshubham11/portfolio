@@ -1,0 +1,43 @@
+/* About ME */
+.section__title > h6 {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+}
+
+.section__title > span{
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.4;
+    left: 0;
+    background-color: var(--component-color);
+    
+}
+
+.aboutme__text {
+    color: darkslategray;
+    font: smaller;
+    line-height: 22px;
+    white-space: pre-line;
+    text-align: justify;
+}
+
+/* timeline section */
+.resume__timeline .timeline__content .timeline__title{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.resume__timeline .timeline__content .timeline__date {
+    font-size: 12px;
+    color: darkslategray;
+}
+
+.resume__timeline .timeline__content .timeline__description {
+    color: gray;
+    font-size: small;
+    margin-top: 6px;
+}
