@@ -36,4 +36,46 @@
     font-weight: 500;
 }
 
+.card .card__description {
+    color: gray;
+    font-weight: 400;
+}
+
 /* Dialog */
+.projectDialog {
+}
+
+.projectDialog .projectDialog__title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.projectDialog .projectDialog__image  {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.projectDialog .projectDialog__description {
+    margin-top: 10px;    
+}
+
+.projectDialog .projectDialog__actions {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.projectDialog .projectDialog__icon {
+    color: darkslategray;
+    margin-bottom: 0px 12px; 
+    cursor: pointer;   
+}
+
+.projectDialog .projectDialog__icon :hover{
+    color: var(--component-color);
+}
+
+.projectDialog .projectDialog__icon > .MuiSvgIcon-root {
+    font-size: 30px;
+}

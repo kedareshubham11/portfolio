@@ -11,7 +11,7 @@ function Portfolio() {
     return (
         <div>
             <Grid container className="section pb__45 pt__45">
-                <Grid item className="section__title mb__30">
+                <Grid item className="section__title mb__20">
                     <span></span>
                     <h6>Portfolio</h6>
                 </Grid>
@@ -34,14 +34,14 @@ function Portfolio() {
                         {data.projects.map(project => (
                             <>
                             {tabvalue === project.tag || tabvalue ==="All" ? (
-                                <Grid item xs={12} sm={6}>
+                                <Grid item xs={12} sm={6} md={4}>
                                     <Grow in timeout={1000}>
                                         <Card className="card" onClick={() => setProjectDialog(project)}>
                                             <CardActionArea>
                                                 <CardMedia className="card__image" image={project.image} title={project.title}/>
                                                 <CardContent>
-                                                    <Typography className="card__title">{project.title}</Typography>
-                                                    <Typography className="card__description" variant="body2">{project.caption}</Typography>
+                                                    <Typography className="card__title" variant="body2">{project.title}</Typography>
+                                                    <Typography className="card__description" variant="caption">{project.caption}</Typography>
                                                 </CardContent>
                                             </CardActionArea>
                                         </Card>
@@ -54,8 +54,14 @@ function Portfolio() {
                     </Grid>
                 </Grid>
 
-                <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
-                    <DialogTitle>{projectDialog.title}</DialogTitle>
+                {/* Project Dialog */}
+
+                <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} className="projectDialog">
+                    <DialogTitle >
+                        <Typography className="projectDialog__title" variant="h4">
+                            {projectDialog.title}
+                        </Typography>
+                    </DialogTitle>
                         <img src={projectDialog.image} alt="project" className="projectDialog__image"/>
                     <DialogContent>
                         <Typography className="projectDialog__description">

@@ -42,10 +42,6 @@ function Profile() {
                     <CustomTimelineItem title={'Birthdate'} text={data.dob} />
                     <CustomTimelineItem title={'Email'} text={data.email} />
                     <CustomTimelineItem title={'Address'} text={data.address} />
-
-                    {Object.keys(data.socials).map(key => (
-                        <CustomTimelineItem title={key} text={data.socials[key].text} link={data.socials[key].link}/>
-                    ))}
                 </CustomTimeline>
                 
                 <div className="button__container">
