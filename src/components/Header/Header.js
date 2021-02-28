@@ -23,15 +23,18 @@ function Header(props) {
             <Navbar.Collapse>
                 <Nav className="header__left">
                     {/* Resume Link */}
-                    <Nav.Link as={NavLink} to="/" className={pathName == "/" ? "headerLink__active" : "headerLink"}>Resume</Nav.Link>
+                    <Nav.Link as={NavLink} to="/" className={pathName === "/" ? "headerLink__active" : "headerLink"}>Resume</Nav.Link>
 
                     {/* Portfolio Link */}
-                    <Nav.Link as={NavLink} to="/portfolio" className={pathName == "/portfolio" ? "headerLink__active" : "headerLink"}>Portfolio</Nav.Link>
+                    <Nav.Link as={NavLink} to="/portfolio" className={pathName === "/portfolio" ? "headerLink__active" : "headerLink"}>Portfolio</Nav.Link>
+
+                    {/* contact Link */}
+                    <Nav.Link as={NavLink} to="/contact" className={pathName === "/contact" ? "headerLink__active" : "headerLink"}>Contact</Nav.Link>
                 </Nav>
 
                 <div className="header__right">
                     {Object.keys(data.socials).map(key => (
-                        <a href={data.socials[key].link} target="_blank">{data.socials[key].icon}</a>
+                        <a href={data.socials[key].link} target="_blank" rel="noreferrer">{data.socials[key].icon}</a>
                     ))}
                     <CustomButton text={"Hire Me"} icon={<Telegram />}/>
                 </div>

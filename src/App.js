@@ -7,6 +7,7 @@ import Resume from './pages/Resume/Resume';
 import Portfolio from './pages/Portfolio/Portfolio';
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
                 <Switch>
                   <Route path="/portfolio">
                     <Portfolio />
+                  </Route>
+
+                  <Route path="/contact">
+                    <Contact />
                   </Route>
                   
                   <Route path="/">

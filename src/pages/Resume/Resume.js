@@ -3,7 +3,6 @@ import React from 'react';
 import "./Resume.css";
 import data from "../../utils/portfolioData";
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/Timeline/CustomTimeline';
-import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';

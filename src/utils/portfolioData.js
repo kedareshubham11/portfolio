@@ -11,6 +11,18 @@ let data = {
     email: "kedareshubham11@gmail.com",
     address: "Adgaon Khurd, Aurnagabad, Maharashtra",
 
+    contact : {
+        Address:{
+            value: "Adgaon Khurd, Aurangabad, Maharashtra",
+        },
+        Phone:{
+            value: "+917775954978",
+        },
+        Email:{
+            value: "kedareshubham11@gmail.com",
+        }, 
+    },
+
     socials: {
         facebook: {
             link: "https://www.facebook.com/shubhamkedare11",
