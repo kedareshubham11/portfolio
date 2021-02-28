@@ -4,7 +4,7 @@ import "./Resume.css";
 
 function Resume() {
     return (
-        <div className>
+        <div>
             {/* About Me  */}
             <Grid container className="section"></Grid>
                 <Grid item className="section__title">

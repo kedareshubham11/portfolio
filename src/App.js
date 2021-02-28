@@ -3,7 +3,6 @@ import { Container, Grid } from '@material-ui/core';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Profile from './components/Profile/Profile';
-import CustomTimeline from './components/Timeline/CustomTimeline';
 import Resume from './pages/Resume/Resume';
 import Portfolio from './pages/Portfolio/Portfolio';
 
