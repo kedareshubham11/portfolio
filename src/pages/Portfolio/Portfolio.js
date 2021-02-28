@@ -58,7 +58,7 @@ function Portfolio() {
 
                 <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} className="projectDialog">
                     <DialogTitle >
-                        <Typography className="projectDialog__title" variant="h4">
+                        <Typography className="projectDialog__title">
                             {projectDialog.title}
                         </Typography>
                     </DialogTitle>

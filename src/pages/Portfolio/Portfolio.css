@@ -1,8 +1,5 @@
 /* Tabs */
 
-.custom__tabs {
-
-}
 .custom__tabs .customTabs__item{
     padding: 0px ;
     min-width: 0px ;
@@ -42,8 +39,7 @@
 }
 
 /* Dialog */
-.projectDialog {
-}
+
 
 .projectDialog .projectDialog__title {
     text-align: center;

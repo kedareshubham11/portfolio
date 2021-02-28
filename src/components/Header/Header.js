@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Header.css";
-import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route, Link, NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import { HomeRounded, Telegram } from '@material-ui/icons';
 import data from "../../utils/portfolioData";
 import CustomButton from "../Button/Button";

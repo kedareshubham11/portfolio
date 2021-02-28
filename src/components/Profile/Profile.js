@@ -6,11 +6,9 @@ import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/CustomTimel
 
 import data from "../../utils/portfolioData";
 import PersonIcon from '@material-ui/icons/Person';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import GetAppIcon from '@material-ui/icons/GetApp';
-import { keys } from "@material-ui/core/styles/createBreakpoints";
 import  CustomButton from "../Button/Button";
 
 const CustomTimelineItem = ({ title, text, link }) => (
