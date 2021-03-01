@@ -36,7 +36,11 @@ function Header(props) {
                     {Object.keys(data.socials).map(key => (
                         <a href={data.socials[key].link} target="_blank" rel="noreferrer">{data.socials[key].icon}</a>
                     ))}
-                    <CustomButton text={"Hire Me"} icon={<Telegram />}/>
+                    <span>
+                        <a href="mailto:kedareshubham11@gmail.com" target="_blank" rel="noreferrer">
+                            <CustomButton text={"Hire Me"} icon={<Telegram />}/>
+                        </a>
+                    </span>
                 </div>
             </Navbar.Collapse>
         </Navbar>

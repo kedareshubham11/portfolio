@@ -4,6 +4,10 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import { WebOutlined } from '@material-ui/icons';
 import LanguageIcon from '@material-ui/icons/Language';
+import netflix_image from "../assets/images/netflix.PNG";
+import amazon_image from "../assets/images/amazon.PNG";
+import instagram_image from "../assets/images/instagram.PNG";
+import trackingapp_image from "../assets/images/trackingapp.png";
 
 let data = {
     name: "Shubham Kedare",
@@ -53,12 +57,12 @@ let data = {
         {
             title: "Bachelor of Engineering",
             date: "2017 - 2020",
-            description: "Computer Science and Engineering \n MIT College Auranabad."
+            description: "Computer Science and Engineering. \nMIT College Auranabad."
         },
         {
             title: "Diploma",
             date: "2014 - 2017",
-            description: "Computer Engineering \n CSMSS COllege of Polytechnic Aurangabad."
+            description: "Computer Engineering \n CSMSS College of Polytechnic Aurangabad."
         },
         {
             title: "SSC",
@@ -124,10 +128,10 @@ let data = {
     projects: [
         {
             tag: 'React',
-            title: "React Project",
-            caption: "Short Description",
-            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
-            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
+            title: "Netflix Show Trailer",
+            caption: "",
+            image: netflix_image,
+            description:"Netflix clone’s frontend is same as original Netflix. TMDB movie database API is used to retrieve information about Netflix movies and series and it has feature to show trailer of Netflix shows.",
             links: [
                 {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
                 {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
@@ -135,35 +139,35 @@ let data = {
         },
         {
             tag: 'React',
-            title: "React Project 2",
-            caption: "Short Description",
-            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
-            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
+            title: "Amazon Clone",
+            caption: "Mimic of Amazon.com",
+            image: amazon_image,
+            description: "Amazon-clone mimic of amazon.com . It has features as create user, login, add to cart, order checkout and full payment functionality and previous orders. Stripe’s API is used for payment functionality.",
             links: [
                 {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
-                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
+                {link: "https://clone-45306.web.app/", icon: <LanguageIcon />},
+            ]
+        },
+        {
+            tag: 'React',
+            title: "Instagram Clone",
+            caption: "Mimic of Instagram.com",
+            image: instagram_image,
+            description: "Created with ReactJS and Firebase. It has features like signup, login, create post, comments, update profile , view posts of others. Firebase is used for database and hosting",
+            links: [
+                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
+                {link: "https://insta-clone-kd-react.web.app/", icon: <LanguageIcon />},
             ]
         },
         {
             tag: 'Python',
-            title: "Python Project",
-            caption: "Short Description",
-            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
-            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
+            title: "Two Wheeler Tracking System",
+            caption: "",
+            image: trackingapp_image,
+            description: "The main objective of this project is to provide tracking and accident detection system for two-wheeler. So, one can monitor and get immediate alerts in emergency cases for his own twowheeler. For this project we used technologies Django and mongoDB .",
             links: [
-                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
-                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
-            ]
-        },
-        {
-            tag: 'Java',
-            title: "Java Project",
-            caption: "Short Description",
-            image: "https://dradisframework.com/images/pro/screenshots/screenshot-62_small.png",
-            description: "This is react project spotify inspire project. Build on top of spofity developers API and i am working on it its can play songs and play pause etc.",
-            links: [
-                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
-                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
+                {link: "", icon: <GitHubIcon />},
+                {link: "", icon: <LanguageIcon />},
             ],
         },
     ],

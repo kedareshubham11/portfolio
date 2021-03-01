@@ -48,3 +48,7 @@
     margin-right: 12px;
     color: black;
 }
+
+.header__right > span > a {
+    text-decoration: none;
+}

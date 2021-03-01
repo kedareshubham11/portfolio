@@ -1,6 +1,7 @@
 import "./Profile.css";
 import { Typography } from '@material-ui/core';
 import profile_img from "../../assets/images/Profile_pic.jpg";
+import resume from "../../assets/files/resume.pdf";
 import React from 'react';
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/CustomTimeline';
 
@@ -43,10 +44,12 @@ function Profile() {
                 </CustomTimeline>
                 
                 <div className="button__container">
+                <a href={resume} download="Shubham Kedare">
                     <CustomButton 
                     text={'Download Cv '}
                     icon={<GetAppIcon />}    
                     />
+                    </a>
                 </div>
             </div>
         </div>
