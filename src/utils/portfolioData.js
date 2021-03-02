@@ -8,6 +8,8 @@ import netflix_image from "../assets/images/netflix.PNG";
 import amazon_image from "../assets/images/amazon.PNG";
 import instagram_image from "../assets/images/instagram.PNG";
 import trackingapp_image from "../assets/images/trackingapp.png";
+import musicapp__image from "../assets/images/musify.PNG";
+import chatroom__image from "../assets/images/chatroom.PNG";
 
 let data = {
     name: "Shubham Kedare",
@@ -128,13 +130,24 @@ let data = {
     projects: [
         {
             tag: 'React',
+            title: "Musify",
+            caption: "Spotify inspire Music App",
+            image: musicapp__image,
+            description: "Spotify inspired music app. Developed with the help of Spotify Developers API.",
+            links: [
+                {link: "", icon: <GitHubIcon />},
+                {link: "", icon: <LanguageIcon />},
+            ]
+        },
+        {
+            tag: 'React',
             title: "Netflix Show Trailer",
             caption: "",
             image: netflix_image,
             description:"Netflix clone’s frontend is same as original Netflix. TMDB movie database API is used to retrieve information about Netflix movies and series and it has feature to show trailer of Netflix shows.",
             links: [
                 {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
-                {link: "https://netflix-clone-kd-react.web.app/", icon: <LanguageIcon />},
+                {link: "", icon: <LanguageIcon />},
             ],
         },
         {
@@ -155,8 +168,19 @@ let data = {
             image: instagram_image,
             description: "Created with ReactJS and Firebase. It has features like signup, login, create post, comments, update profile , view posts of others. Firebase is used for database and hosting",
             links: [
-                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
+                {link: "", icon: <GitHubIcon />},
                 {link: "https://insta-clone-kd-react.web.app/", icon: <LanguageIcon />},
+            ]
+        },
+        {
+            tag: 'React',
+            title: "Chat Room",
+            caption: "",
+            image: chatroom__image,
+            description: "Chat Room app. Where user can create room and chat with others",
+            links: [
+                {link: "", icon: <GitHubIcon />},
+                {link: "", icon: <LanguageIcon />},
             ]
         },
         {
@@ -170,6 +194,7 @@ let data = {
                 {link: "", icon: <LanguageIcon />},
             ],
         },
+        
     ],
 
 

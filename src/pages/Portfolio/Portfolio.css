@@ -26,8 +26,14 @@
 }
 
 .card .card__image {
-    height: 140px;
+    /* height: 140px; */
+    height: 120px;
+    
+    
+
 }
+
+
 
 .card .card__title {
     font-weight: 500;
