@@ -87,7 +87,7 @@ function Resume() {
                 <Grid container spacing={3} justify="space-between" className="section graybg pb__45">
                     {data.skilss.map(skill => (
                         <Grid item xs={12} sm={6} md={3}>
-                            <Paper elevation={0} className="skill">
+                            <Paper elevation={1} className="skill">
                                 <Typography variant="h6" className="skill__title">
                                     {skill.title}
                                 </Typography>

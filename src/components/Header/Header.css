@@ -36,8 +36,14 @@
 
 .header__left {
     margin-right: auto;
+    display: flex !important;
+    align-items: center !important;
 }
 
+.nav__items {
+    display: flex !important;
+    justify-content: center  !important;
+}
 .header__right{
     display: flex !important;
     align-items: center !important;

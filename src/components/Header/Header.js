@@ -18,10 +18,11 @@ function Header(props) {
                 </Navbar.Brand>
             </Nav.Link>
 
-            <Navbar.Toggle />
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
 
-            <Navbar.Collapse>
-                <Nav className="header__left">
+            <Navbar.Collapse id="basic-navbar-nav">
+                
+                <Nav className="header__left ">
                     {/* Resume Link */}
                     <Nav.Link as={NavLink} to="/" className={pathName === "/" ? "headerLink__active" : "headerLink"}>RESUME</Nav.Link>
 
@@ -31,8 +32,9 @@ function Header(props) {
                     {/* contact Link */}
                     <Nav.Link as={NavLink} to="/contact" className={pathName === "/contact" ? "headerLink__active" : "headerLink"}>CONTACT</Nav.Link>
                 </Nav>
-
+                <div className="nav__items">
                 <div className="header__right">
+                    
                     {Object.keys(data.socials).map(key => (
                         <a href={data.socials[key].link} target="_blank" rel="noreferrer">{data.socials[key].icon}</a>
                     ))}
@@ -42,6 +44,7 @@ function Header(props) {
                         </a>
                     </span>
                 </div>
+                </div> 
             </Navbar.Collapse>
         </Navbar>
     )

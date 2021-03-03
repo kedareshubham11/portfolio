@@ -3,12 +3,17 @@
 }
 :root {
   --component-color: #ffc500;
+  --default-color: #ffc500;
 }
 
 /* margins and padding */
 .top__60 {
   margin-top: 60px !important;
 }
+.top__10 {
+  margin-top: 10px !important;
+}
+
 
 .mt__30 {
   margin-top: 30px !important;
@@ -32,8 +37,8 @@
 }
 
 @media (max-width: 991px) {
-  .top__60 {
-    margin-top: 30px !important;
+  .top__10 {
+    margin-top: 10px !important;
   }
 }
 
