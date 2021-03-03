@@ -1,10 +1,66 @@
-import { Grid, TextField, Typography } from '@material-ui/core';
-import React from 'react';
+import { Grid, Snackbar, TextField, Typography } from '@material-ui/core';
+import React, { useState } from 'react';
 import CustomButton from '../../components/Button/Button';
 import "./Contact.css";
 import data from "../../utils/portfolioData";
+import emailjs from "emailjs-com";
+
+import {service_id, user_id, template_id} from "./EmailJSApiKeys";
+import MuiAlert from '@material-ui/lab/Alert';
+
 
 function Contact() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [open, setOpen] = React.useState(false);
+    const [open2, setOpen2] = React.useState(false);
+
+    function Alert(props) {
+        return <MuiAlert elevation={6} variant="filled" {...props} />;
+      }
+
+    const handleClick = () => {
+        setOpen(true);
+    };
+
+    const handleClick2 = () => {
+        setOpen2(true);
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+        return;
+        }
+        setOpen(false);
+    };
+    const handleClose2 = (event, reason) => {
+        if (reason === 'clickaway') {
+        return;
+        }
+        setOpen2(false);
+    };
+
+    const sendContact = ()=> {
+        let templateParams = {
+            name: name,
+            email: email,
+            message: message
+        }
+        emailjs.send(service_id, template_id, templateParams, user_id)
+            .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+
+        handleClick();
+
+        }, function(error) {
+        console.log('FAILED...', error);
+        
+        handleClick2();
+
+        });
+
+    }
     return (
         <div >
             <Grid container className="contact" spacing={6}>
@@ -19,22 +75,25 @@ function Contact() {
                         <Grid item xs={12}>
                             <Grid container spacing={3}>
                                 <Grid item xs={12} sm={6}>
-                                    <TextField fullWidth name="name" label="Name">
+                                    <TextField required fullWidth name="name" label="Name" value={name} onChange={(e) => setName(e.target.value)}>
                                     </TextField>
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <TextField fullWidth name="email" label="Email">
+                                    <TextField required fullWidth name="email" label="Email" value={email} onChange={(e) => setEmail(e.target.value)}>
                                     </TextField>
                                 </Grid>
 
                                 <Grid item xs={12}>
-                                    <TextField fullWidth name="message" label="Message" multiline rows={4}>
+                                    <TextField fullWidth name="message" label="Message" multiline rows={4} value={message} onChange={(e) => setMessage(e.target.value)}>
                                     </TextField>
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <CustomButton text="Submit"/>
+                                    <span onClick={sendContact}>
+                                    <CustomButton text="Submit" />
+                                    </span>
+                                    
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -75,6 +134,16 @@ function Contact() {
                         </Grid>
                     </Grid>
                 </Grid>
+                <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                    <Alert onClose={handleClose} severity="success">
+                        Contact sent successfully!
+                    </Alert>
+                </Snackbar>
+                <Snackbar open={open2} autoHideDuration={6000} onClose={handleClose2}>
+                    <Alert onClose={handleClose2} severity="error">
+                        Form Submission Faild !
+                    </Alert>
+                </Snackbar>
             </Grid>
         </div>
     )
