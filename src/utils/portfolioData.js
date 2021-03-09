@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FlightIcon from '@material-ui/icons/Flight';
 import NewReleasesIcon from '@material-ui/icons/NewReleases';
-import { MusicNote, Pool, SportsEsports } from '@material-ui/icons';
+import { Pool, SportsEsports } from '@material-ui/icons';
 import LanguageIcon from '@material-ui/icons/Language';
 import netflix_image from "../assets/images/netflix.PNG";
 import amazon_image from "../assets/images/amazon.PNG";
