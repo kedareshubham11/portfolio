@@ -13,7 +13,7 @@ function Portfolio() {
             <Grid container className="section pb__45 pt__45">
                 <Grid item className="section__title mb__20">
                     <span></span>
-                    <h6>Portfolio</h6>
+                    <h6>Projects</h6>
                 </Grid>
 
                 {/* Tabs */}
@@ -38,7 +38,7 @@ function Portfolio() {
                                     <Grow in timeout={1000}>
                                         <Card className="card" onClick={() => setProjectDialog(project)}>
                                             <CardActionArea>
-                                                <CardMedia className="card__image" image={project.image} title={project.title}/>
+                                                <CardMedia className="card__image" image={project.thumb} title={project.title}/>
                                                 <CardContent>
                                                     <Typography className="card__title" variant="body2">{project.title}</Typography>
                                                     <Typography className="card__description" variant="caption">{project.caption}</Typography>
@@ -70,7 +70,7 @@ function Portfolio() {
                     </DialogContent>
                     <DialogActions className="projectDialog__actions">
                         {projectDialog?.links?.map((link) => (
-                            <a href={link.link} target="_blank" className="projectDialog__icon" rel="noreferrer">{link.icon}</a>
+                            (link.link === "" ? "" : (<a href={link.link} target="_blank" className="projectDialog__icon" rel="noreferrer">{link.icon}</a>) )
                         ))}
                     </DialogActions>
                 </Dialog>

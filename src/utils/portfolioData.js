@@ -7,11 +7,19 @@ import NewReleasesIcon from '@material-ui/icons/NewReleases';
 import { Pool, SportsEsports } from '@material-ui/icons';
 import LanguageIcon from '@material-ui/icons/Language';
 import netflix_image from "../assets/images/netflix.PNG";
+import netflix_image_thumb from "../assets/images/netflix_thumb.png";
 import amazon_image from "../assets/images/amazon.PNG";
+import amazon_image_thumb from "../assets/images/amazon_thumb.png";
 import instagram_image from "../assets/images/instagram.PNG";
 import trackingapp_image from "../assets/images/trackingapp.png";
+import trackingapp_image_thumb from "../assets/images/trackingapp_thumb.png";
 import musicapp__image from "../assets/images/musify.PNG";
+import musicapp_image_thumb from "../assets/images/musify_thumb.png";
 import chatroom__image from "../assets/images/chatroom.PNG";
+import chatroom_image_thumb from "../assets/images/chatroom_thumb.png";
+import search_app from "../assets/images/searchapp.PNG";
+import search_app_thumb from "../assets/images/searchapp_thumb.png";
+
 
 
 let data = {
@@ -80,6 +88,11 @@ let data = {
         }
     ],
 
+    languages:[
+        "English",
+        "Hindi",
+        "Marathi",
+    ],
     hobbies: [
         {
             title: "Swimming",
@@ -154,21 +167,23 @@ let data = {
             title: "Musify",
             caption: "Spotify inspired Music App",
             image: musicapp__image,
-            description: "Spotify inspired music app. Developed with the help of Spotify Developers API.",
+            thumb: musicapp_image_thumb,
+            description: "(In Development...) Spotify inspired music app. Where user can play their favourite playlists or albums. Developed in Reactjs and Spotify Developers API.",
             links: [
-                {link: "", icon: <GitHubIcon />},
-                {link: "", icon: <LanguageIcon />},
+                {link: "https://github.com/kedareshubham11/musify-react", icon: <GitHubIcon />},
+                {link: "https://shubham-kedare-musify.netlify.app/", icon: <LanguageIcon />},
             ]
         },
         {
             tag: 'React',
             title: "Netflix Show Trailer",
-            caption: "",
+            caption: "Netflix Show Information and Trailers.",
             image: netflix_image,
-            description:"Netflix clone’s frontend is same as original Netflix. TMDB movie database API is used to retrieve information about Netflix movies and series and it has feature to show trailer of Netflix shows.",
+            thumb: netflix_image_thumb,
+            description:"Netflix Shows Pictures and Netflix original's Trailer. Created with ReactJS and TMDB movie database API is used to retrieve information about Netflix movies and series. it has feature to show trailer of Netflix shows.",
             links: [
-                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
-                {link: "", icon: <LanguageIcon />},
+                {link: "https://github.com/kedareshubham11/Netflix-Shows", icon: <GitHubIcon />},
+                {link: "https://netflix-clone-kd-react.web.app", icon: <LanguageIcon />},
             ],
         },
         {
@@ -176,9 +191,10 @@ let data = {
             title: "Amazon Clone",
             caption: "Mimic of Amazon.com",
             image: amazon_image,
-            description: "Amazon-clone mimic of amazon.com . It has features as create user, login, add to cart, order checkout and full payment functionality and previous orders. Stripe’s API is used for payment functionality.",
+            thumb: amazon_image_thumb,
+            description: "Amazon-clone mimic of amazon.com . It has features as create user, login, add to cart, order checkout and full payment functionality and previous orders. Created with ReactJS for frontend and Node.js Express for backend. Hosted on firebase hosting and firebase functions. Stripe’s API is used for payment functionality.",
             links: [
-                {link: "https://github.com/kedareshubham11/portfolio", icon: <GitHubIcon />},
+                {link: "https://github.com/kedareshubham11/EShop", icon: <GitHubIcon />},
                 {link: "https://clone-45306.web.app/", icon: <LanguageIcon />},
             ]
         },
@@ -187,9 +203,10 @@ let data = {
             title: "Instagram Clone",
             caption: "Mimic of Instagram.com",
             image: instagram_image,
-            description: "Created with ReactJS and Firebase. It has features like signup, login, create post, comments, update profile , view posts of others. Firebase is used for database and hosting",
+            thumb: instagram_image,
+            description: "Created with ReactJS and Firebase. It is a social media app. It has features like signup, login, create post, comments, update profile , view posts of others. Firebase is used for database and hosting",
             links: [
-                {link: "", icon: <GitHubIcon />},
+                {link: "https://github.com/kedareshubham11/SnapIT", icon: <GitHubIcon />},
                 {link: "https://insta-clone-kd-react.web.app/", icon: <LanguageIcon />},
             ]
         },
@@ -198,20 +215,34 @@ let data = {
             title: "Chat Room",
             caption: "Group Chat App",
             image: chatroom__image,
-            description: "Chat Room app. Where user can create room and chat with others",
+            thumb: chatroom_image_thumb,
+            description: "Chat Room app. Where user can create room and chat with others. Created with (MERN) Stack MongoDB, Express, ReactJS, Node.js. Pusher API is used for making mongodb realtime to get chatmessages in realtime.",
             links: [
-                {link: "", icon: <GitHubIcon />},
+                {link: "https://github.com/kedareshubham11/Chat-Room-MERN", icon: <GitHubIcon />},
                 {link: "", icon: <LanguageIcon />},
             ]
         },
         {
             tag: 'Python',
             title: "Two Wheeler Tracking System",
-            caption: "Live location tracking system for two wheeler.",
+            caption: "Live location tracking for two wheeler.",
             image: trackingapp_image,
-            description: "The main objective of this project is to provide tracking and accident detection system for two-wheeler. So, one can monitor and get immediate alerts in emergency cases for his own twowheeler. For this project we used technologies Django and mongoDB .",
+            thumb: trackingapp_image_thumb,
+            description: "The main objective of this project is to provide tracking and accident detection system for two-wheeler. So, one can monitor and get immediate alerts in emergency cases for his own twowheeler. Project created with Django, mongoDB, Redis .",
             links: [
                 {link: "https://github.com/csetwowheeler/twowheeler2020", icon: <GitHubIcon />},
+                {link: "", icon: <LanguageIcon />},
+            ],
+        },
+        {
+            tag: 'Python',
+            title: "Foogle Search",
+            caption: "Filter serach result from craiglist",
+            image: search_app,
+            thumb: search_app_thumb,
+            description: "Foogle search is like search app. It search on craglist.com and provide the information and item price related with search keyword. After Clicking on any of search result it redirect to craglist.com to actual product where one can buy. Created with Django.",
+            links: [
+                {link: "https://github.com/kedareshubham11/codedaddies_list", icon: <GitHubIcon />},
                 {link: "", icon: <LanguageIcon />},
             ],
         },

@@ -125,7 +125,7 @@ function Contact() {
                             <Grid container className="contactInfo__socialContainer">
                                 {Object.keys(data.socials).map(key => (
                                     <Grid item className="contactInfo__social">
-                                        <a href={data.socials[key].link}>
+                                        <a href={data.socials[key].link} target="_blank" rel="noreferrer">
                                             {data.socials[key].icon}
                                         </a>
                                     </Grid>

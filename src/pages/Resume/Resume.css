@@ -110,3 +110,18 @@ margin-right: 5px;
 .space{
     margin-right: 50px;
 }
+
+.service2{
+    font-weight: 400;
+}
+.service2 .service__title2 {
+    display: flex;
+    align-items: center;
+    color: darkslategray;
+}
+
+ .service2 .service__title2 .timeline__dot2 {
+    border-color: var(--component-color);
+    padding: 2px;
+    margin-right: 5px;
+}

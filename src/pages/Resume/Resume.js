@@ -7,6 +7,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
+import { TranslateOutlined } from '@material-ui/icons';
 function Resume() {
     
     return (
@@ -82,6 +83,29 @@ function Resume() {
             </Grid>
 
              {/* Hobbies */}
+            <Grid container className="section pb__45">
+                <Grid item className="section__title mb__30">
+                    <span></span>
+                    <h6>Languages</h6>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Grid container spacing={3} justify="space-around">
+                        {data.languages.map(lang => (
+                            <Grid item xs={12} sm={6} md={3}>
+                                <div className="service2">
+                                    {/* <Icon className="service__icon"><TranslateOutlined /></Icon> */}
+                                    <Typography className="service__title2" variant="body1">
+                                    <TimelineDot variant="outlined" className="timeline__dot2" />{lang}
+                                    </Typography>
+                                    
+                                </div>
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+
+            </Grid>
             <Grid container className="section pb__45">
                 <Grid item className="section__title mb__30">
                     <span></span>
