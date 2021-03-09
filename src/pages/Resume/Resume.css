@@ -19,6 +19,7 @@
 
 .aboutme__text {
     color: darkslategray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: smaller;
     line-height: 22px;
     white-space: pre-line;
@@ -31,16 +32,23 @@
     font-weight: 500;
 }
 
+.resume__timeline .timeline__content .timeline__course{
+    font-size: 13px;
+    color: darkslategray;
+    margin-top: 5px;
+}
 .resume__timeline .timeline__content .timeline__date {
     font-size: 12px;
-    color: darkslategray;
+    color: gray;
+    margin-top: 4px;
 }
 
 .resume__timeline .timeline__content .timeline__description {
     color: gray;
     font-size: small;
-    margin-top: 6px;
+    margin-top: 4px;
 }
+
 
 /* services */
 .service {
@@ -56,9 +64,9 @@
 }
 
 .service .service__description {
-    color: #989898;
+    margin-top: 4px;
     border-color: var(--component-color) !important;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     text-align: center;
 }
 
@@ -97,4 +105,8 @@ line-height: 18px;
 border-color: var(--component-color);
 padding: 2px;
 margin-right: 5px;
+}
+
+.space{
+    margin-right: 50px;
 }

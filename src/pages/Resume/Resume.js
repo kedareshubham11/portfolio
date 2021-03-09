@@ -15,11 +15,11 @@ function Resume() {
             <Grid container className="section pb__45">
                 <Grid item className="section__title mb__30">
                     <span></span>
-                    <h6>About Me</h6>
+                    <h6>Career Objective</h6>
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Typography variant="body2" className="aboutme__text">{data.about}</Typography>
+                    <Typography variant="body2" className="aboutme__text"><span class="space">{""}</span>{data.about}</Typography>
                 </Grid>
             </Grid>
             {/* Education and Experiences */}
@@ -27,19 +27,20 @@ function Resume() {
 
                 <Grid item className="section__title mb__30">
                     <span></span>
-                    <h6>Resume</h6>
+                    <h6>Education</h6>
                 </Grid>
 
                 <Grid item xs={12}>
                     <Grid container className="resume__timeline">
                         {/* Work */}
                         <Grid item sm={12} md={6}>
-                            <CustomTimeline title={"Education"} icon={<SchoolIcon /> } >
+                            <CustomTimeline icon={<SchoolIcon /> }>
                                 {data.education.map(education => (
                                     <TimelineItem>
                                         <CustomTimelineSeparator />
                                         <TimelineContent className="timeline__content">
                                             <Typography className="timeline__title">{education.title}</Typography>
+                                            <Typography className="timeline__course">{education.course}</Typography>
                                             <Typography className="timeline__date">{education.date}</Typography>
                                             <Typography variant="body2" className="timeline__description">{education.description}</Typography>
                                         </TimelineContent>
@@ -54,31 +55,9 @@ function Resume() {
                 </Grid>
             </Grid>
            
-            {/* services */}
-            <Grid container className="section pb__45">
-                <Grid item className="section__title mb__30">
-                    <span></span>
-                    <h6>Services</h6>
-                </Grid>
-
-                <Grid item xs={12}>
-                    <Grid container spacing={3} justify="space-around">
-                        {data.services.map(service => (
-                            <Grid item xs={12} sm={6} md={3}>
-                                <div className="service">
-                                    <Icon className="service__icon">{service.icon}</Icon>
-                                    <Typography className="service__title" variant="h6">{service.title}</Typography>
-                                    <Typography className="service__description" variant="body2">{service.description}</Typography>
-                                </div>
-                            </Grid>
-                        ))}
-                    </Grid>
-                </Grid>
-
-            </Grid>
 
              {/* Skills */}
-             <Grid container className="section pb__45">
+            <Grid container className="section pb__45">
                 <Grid item className="section__title mb__30">
                     <span></span>
                     <h6>Skills</h6>
@@ -99,11 +78,32 @@ function Resume() {
                             </Paper>
                         </Grid>
                     ))}
-             </Grid>
-             </Grid>
+                </Grid>
+            </Grid>
 
-            {/* contact */}
-            <Grid container className="section"></Grid>
+             {/* Hobbies */}
+            <Grid container className="section pb__45">
+                <Grid item className="section__title mb__30">
+                    <span></span>
+                    <h6>Hobbies</h6>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Grid container spacing={3} justify="space-around">
+                        {data.hobbies.map(service => (
+                            <Grid item xs={12} sm={6} md={3}>
+                                <div className="service">
+                                    <Icon className="service__icon">{service.icon}</Icon>
+                                    <Typography className="service__title" variant="h6">{service.title}</Typography>
+                                    <Typography className="service__description" variant="body2">{service.description}</Typography>
+                                </div>
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+
+            </Grid>
+
 
 
         </div>
