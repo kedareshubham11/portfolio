@@ -13,8 +13,9 @@ function Contact() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [open, setOpen] = React.useState(false);
-    const [open2, setOpen2] = React.useState(false);
+    const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
+    const [open3, setOpen3] = useState(false);
 
     function Alert(props) {
         return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -28,12 +29,17 @@ function Contact() {
         setOpen2(true);
     };
 
+    const handleClick3 = () => {
+        setOpen3(true);
+    };
+
     const handleClose = (event, reason) => {
         if (reason === 'clickaway') {
         return;
         }
         setOpen(false);
     };
+
     const handleClose2 = (event, reason) => {
         if (reason === 'clickaway') {
         return;
@@ -41,25 +47,37 @@ function Contact() {
         setOpen2(false);
     };
 
+    const handleClose3 = (event, reason) => {
+        if (reason === 'clickaway') {
+        return;
+        }
+        setOpen3(false);
+    };
+
     const sendContact = ()=> {
+
+        if(name !== "" && email !== "" && message !=="")
+        {
         let templateParams = {
             name: name,
             email: email,
             message: message
         }
         emailjs.send(service_id, template_id, templateParams, user_id)
-            .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-
-        handleClick();
-
-        }, function(error) {
-        console.log('FAILED...', error);
-        
-        handleClick2();
-
+            .then(function(response) 
+            {
+            console.log('SUCCESS!', response.status, response.text);
+            handleClick();
+        }, 
+        function(error) {
+            console.log('FAILED...', error);
+            handleClick2();
         });
 
+        }
+        else{
+            handleClick3();
+        }
     }
     return (
         <div >
@@ -75,12 +93,12 @@ function Contact() {
                         <Grid item xs={12}>
                             <Grid container spacing={3}>
                                 <Grid item xs={12} sm={6}>
-                                    <TextField required fullWidth name="name" label="Name" value={name} onChange={(e) => setName(e.target.value)}>
+                                    <TextField  fullWidth name="name" label="Name" value={name} onChange={(e) => setName(e.target.value)}>
                                     </TextField>
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <TextField required fullWidth name="email" label="Email" value={email} onChange={(e) => setEmail(e.target.value)}>
+                                    <TextField  fullWidth name="email" label="Email" value={email} onChange={(e) => setEmail(e.target.value)}>
                                     </TextField>
                                 </Grid>
 
@@ -93,7 +111,7 @@ function Contact() {
                                     <span onClick={sendContact}>
                                     <CustomButton text="Submit" />
                                     </span>
-                                    
+                                
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -136,12 +154,18 @@ function Contact() {
                 </Grid>
                 <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                     <Alert onClose={handleClose} severity="success">
-                        Contact sent successfully!
+                        Contact sent successfully !
                     </Alert>
                 </Snackbar>
                 <Snackbar open={open2} autoHideDuration={6000} onClose={handleClose2}>
                     <Alert onClose={handleClose2} severity="error">
                         Form Submission Faild !
+                    </Alert>
+                </Snackbar>
+
+                <Snackbar open={open3} autoHideDuration={6000} onClose={handleClose3}>
+                    <Alert onClose={handleClose3} severity="error">
+                        All fields are required !
                     </Alert>
                 </Snackbar>
             </Grid>

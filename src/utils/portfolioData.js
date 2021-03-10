@@ -131,6 +131,7 @@ let data = {
             title: "BACKE-END",
             description: [
                 "NodeJs",
+                "Express",
                 "Python",
                 "Java"
             ]
@@ -223,7 +224,7 @@ let data = {
             ]
         },
         {
-            tag: 'Python',
+            tag: 'Django',
             title: "Two Wheeler Tracking System",
             caption: "Live location tracking for two wheeler.",
             image: trackingapp_image,
@@ -235,7 +236,7 @@ let data = {
             ],
         },
         {
-            tag: 'Python',
+            tag: 'Django',
             title: "Foogle Search",
             caption: "Filter serach result from craiglist",
             image: search_app,

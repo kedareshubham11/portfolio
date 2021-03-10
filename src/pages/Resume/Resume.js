@@ -7,7 +7,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import { TranslateOutlined } from '@material-ui/icons';
+// import { TranslateOutlined } from '@material-ui/icons';
 function Resume() {
     
     return (
@@ -97,7 +97,7 @@ function Resume() {
                                     {/* <Icon className="service__icon"><TranslateOutlined /></Icon> */}
                                     <Typography className="service__title2" variant="body1">
                                     <TimelineDot variant="outlined" className="timeline__dot2" />{lang}
-                                    </Typography>
+                            </Typography>
                                     
                                 </div>
                             </Grid>
