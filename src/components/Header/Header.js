@@ -34,10 +34,11 @@ function Header(props) {
                 </Nav>
                 <div className="nav__items">
                 <div className="header__right">
-                    
+                    <div className="social_icons">
                     {Object.keys(data.socials).map(key => (
                         <a href={data.socials[key].link} target="_blank" rel="noreferrer">{data.socials[key].icon}</a>
                     ))}
+                    </div>
                     <span>
                         <a href="mailto:kedareshubham11@gmail.com" target="_blank" rel="noreferrer">
                             <CustomButton text={"Hire Me"} icon={<Telegram />}/>

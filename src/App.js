@@ -12,8 +12,11 @@ import Colorpicker from './components/ColorPicker/Colorpicker';
   
 
 function App() {
+  document.title = "Porfolio";
   return (
     <div className="app">
+      
+
        <Colorpicker />
       <Container className="top__10">
      
@@ -36,7 +39,6 @@ function App() {
                   <Route path="/contact">
                     <Contact />
                   </Route>
-                  {/* {document.documentElement.style.setProperty('--component-color','#a8a8a8')} */}
                   <Route path="/">
                     <Resume />
                   </Route>
