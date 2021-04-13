@@ -211,6 +211,22 @@ let data = {
     },
     {
       tag: "React",
+      title: "Chat Room",
+      caption: "Group Chat App",
+      image: chatroom__image,
+      thumb: chatroom_image_thumb,
+      description:
+        "Chat Room app. Where user can create room and chat with others. Created with (MERN) Stack MongoDB, Express, ReactJS, Node.js. Pusher API is used for making mongodb realtime to get chatmessages in realtime.",
+      links: [
+        {
+          link: "https://github.com/kedareshubham11/Chat-Room-MERN",
+          icon: <GitHubIcon />,
+        },
+        { link: "", icon: <LanguageIcon /> },
+      ],
+    },
+     {
+      tag: "React",
       title: "Instagram Clone",
       caption: "Mimic of Instagram.com",
       image: instagram_image,
@@ -226,22 +242,6 @@ let data = {
           link: "https://insta-clone-kd-react.web.app/",
           icon: <LanguageIcon />,
         },
-      ],
-    },
-    {
-      tag: "React",
-      title: "Chat Room",
-      caption: "Group Chat App",
-      image: chatroom__image,
-      thumb: chatroom_image_thumb,
-      description:
-        "Chat Room app. Where user can create room and chat with others. Created with (MERN) Stack MongoDB, Express, ReactJS, Node.js. Pusher API is used for making mongodb realtime to get chatmessages in realtime.",
-      links: [
-        {
-          link: "https://github.com/kedareshubham11/Chat-Room-MERN",
-          icon: <GitHubIcon />,
-        },
-        { link: "", icon: <LanguageIcon /> },
       ],
     },
     {
