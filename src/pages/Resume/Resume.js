@@ -16,11 +16,11 @@ function Resume() {
             <Grid container className="section pb__45">
                 <Grid item className="section__title mb__30">
                     <span></span>
-                    <h6>Career Objective</h6>
+                    <h6>Introduction</h6>
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Typography variant="body2" className="aboutme__text"><span class="space">{""}</span>{data.about}</Typography>
+                    <Typography variant="body2" className="aboutme__text">{data.about}</Typography>
                 </Grid>
             </Grid>
             {/* Education and Experiences */}

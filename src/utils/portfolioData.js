@@ -27,7 +27,7 @@ let data = {
   title: "Full Stack Developer",
   dob: "12th May 1998",
   email: "kedareshubham11@gmail.com",
-  address: "Adgaon Khurd, Aurnagabad, Maharashtra.",
+  address: "Adgaon Khurd, Auranagabad, Maharashtra. 431007",
 
   contact: {
     Address: {
@@ -65,7 +65,7 @@ let data = {
   },
 
   about:
-    "A disciplined and hardworking individual looking forward for a career with an organization which can help me with opportunities to enhance my knowledge, skills and techniques which in turn will be beneficial for the organization.",
+    "Hello, I'm Shubham Kedare. \n I'm a Full Stack Web Developer Specialized in React.",
 
   education: [
     {
