@@ -9,6 +9,7 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 // import { TranslateOutlined } from '@material-ui/icons';
 function Resume() {
+    console.log(process.env.REACT_APP_HELLO, 'hello', process.env.NODE_ENV);
     
     return (
         <div>

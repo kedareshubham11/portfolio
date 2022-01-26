@@ -4,8 +4,6 @@ import CustomButton from '../../components/Button/Button';
 import "./Contact.css";
 import data from "../../utils/portfolioData";
 import emailjs from "emailjs-com";
-
-import {service_id, user_id, template_id} from "./EmailJSApiKeys";
 import MuiAlert from '@material-ui/lab/Alert';
 
 
@@ -63,7 +61,7 @@ function Contact() {
             email: email,
             message: message
         }
-        emailjs.send(service_id, template_id, templateParams, user_id)
+        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_USER_ID)
             .then(function(response) 
             {
             console.log('SUCCESS!', response.status, response.text);
